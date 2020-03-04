@@ -44,9 +44,10 @@ ALTER TABLE Users
 	CHANGE
 		MiddleName Initial VARCHAR(64);
 ALTER TABLE Users
-	CHANGE
-		FirstName First_Name,
-		LastName Last_Name;
+CHANGE
+FirstName First_Name VARCHAR(255),
+LastName Last_Name VARCHAR(255);
+
 DESCRIBE Users;
 
 CREATE TABLE Students(
@@ -57,7 +58,7 @@ CREATE TABLE Students(
 	Country VARCHAR(255));
 
 INSERT INTO	 Students (StudentName, Address, City, PostalCode, 	Country)
-	VALUES ('Jane Doe', '57 Union St', 'Glasgow', 'G13RB', 'Scotland');
+VALUES ('Jane Doe', '57 Union St', 'Glasgow', 'G13RB', 'Scotland');
 
 UPDATE Students
 SET City = 'Edinburgh'
